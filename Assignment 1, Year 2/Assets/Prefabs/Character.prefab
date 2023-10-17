@@ -27,6 +27,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 686824727051830638}
   - {fileID: 2460564367518961408}
   m_Father: {fileID: 4526487493650966750}
   m_RootOrder: 0
@@ -44,7 +45,7 @@ GameObject:
   - component: {fileID: 5064675612106316772}
   - component: {fileID: 4448971057748185565}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Glasses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +63,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.2, z: 0.15000002}
   m_Children: []
   m_Father: {fileID: 5145847444282207625}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6091243403483393895
 MeshFilter:
@@ -149,12 +150,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6353451757035381154}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.943, z: 0.367}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.025, y: 0.543, z: 0.509}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4526487493650966750}
-  m_RootOrder: 1
+  m_Father: {fileID: 5145847444282207625}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8557377596090748521
 GameObject:
@@ -189,7 +190,6 @@ Transform:
   m_LocalScale: {x: 6.220393, y: 6.220393, z: 6.220393}
   m_Children:
   - {fileID: 5145847444282207625}
-  - {fileID: 686824727051830638}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -287,8 +287,8 @@ MonoBehaviour:
   playerCam: {fileID: 0}
   orientation: {fileID: 5145847444282207625}
   moveSpeed: 4500
-  maxSpeed: 20
-  grounded: 0
+  maxSpeed: 200
+  grounded: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
